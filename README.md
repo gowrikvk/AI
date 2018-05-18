@@ -13,6 +13,10 @@ Canny (image, minVal, maxVal) - min and max Val are intensity gradient values.
 
 edged = cv2.Canny(blurred, 100, 200) - with 100 and 200 - values it will never identifies the rectangularbox.
 
-In code, change intenif you have 
-edged = cv2.Canny(blurred, 10, 200)  
-then it exactly identifies the 
+In code, change min and max vals as given below  
+
+edged = cv2.Canny(blurred, 10, 200)  - identifies the rectangulat box 
+
+and first contour itself is the rectangular box.
+
+edged = cv2.Canny(blurred, 35, 70) -get the rectangular box with 487 contours with first contour as cheque amount box.
