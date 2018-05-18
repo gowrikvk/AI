@@ -11,9 +11,9 @@ To identify the edge detection, we can use Canny from CV2. Canny uses a multi-st
 
 Canny (image, minVal, maxVal) - min and max Val are intensity gradient values.
 
-edged = cv2.Canny(blurred, 100, 200) - with 100 and 200 - values it will never identifies the rectangularbox.
+edged = cv2.Canny(blurred, 100, 200) --  with these values it will never identifies the rectangularbox on this specific cheque.
 
-In code, change min and max vals as given below  
+In code, change min and max values as given below  
 
 edged = cv2.Canny(blurred, 10, 200)  - identifies the rectangulat box 
 
